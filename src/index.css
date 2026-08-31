@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ======== ESTILO GLOBAL ========= */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+
+body {
+  font-family: "Inter", sans-serif;
+  color: #f1f5f9;
+  background-image: url("image.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+
+h1,
+h2,
+h3,
+h4 {
+  @apply text-gray-800;
+}
+
+main {
+  @apply max-w-6xl mx-auto px-4;
+}
+
+/* Links e navegação */
+a {
+  @apply text-blue-600 hover:text-yellow-500 transition-all;
+}
+
+/* Botões padrão */
+button {
+  @apply transition-all;
+}
+
+/* Cards */
+.card {
+  @apply bg-white shadow-md rounded-full p-4 border border-gray-200 relative;
+}
+
+
+/* Títulos sempre visíveis */
+.titulo-pagina {
+  @apply text-3xl font-bold text-yellow-400 mb-6 drop-shadow-md;
+}
+
+/* Texto padrão claro */
+.texto-claro {
+  @apply text-gray-100 text-base leading-relaxed;
+}
+
+/* Ajuste da badge de nota */
+.badge {
+  @apply px-2 py-0.5 text-sm font-bold rounded;
+}
+
+.badge-verde {
+  @apply bg-green-600 text-white;
+}
+
+.badge-amarela {
+  @apply bg-yellow-400 text-black;
+}
+
+.badge-vermelha {
+  @apply bg-red-600 text-white;
+}
+
+.card-form {
+  @apply max-w-2xl mx-auto bg-black/70 backdrop-blur-md p-6 rounded-xl shadow-lg text-white;
+}
+
+.input-form {
+  @apply w-full bg-gray-800 border border-gray-600 rounded px-3 py-2 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-yellow-400;
+}
+
+.textarea-form {
+  @apply input-form;
+}
+
+.label-form {
+  @apply block text-gray-200 font-semibold text-sm mb-1;
+}
+
+.btn-primario {
+  @apply bg-blue-600 hover:bg-blue-500 text-white px-4 py-2 rounded font-medium transition;
+}
+
+.btn-secundario {
+  @apply bg-blue-600 hover:bg-blue-500 text-white px-4 py-2 rounded font-medium transition;
+}
+
+.titulo-pagina {
+  @apply text-3xl font-bold text-yellow-400 mb-6 drop-shadow-md;
+}
+
+
+
+/* Responsividade e ajustes extras */
+@media (max-width: 640px) {
+  h2 {
+    @apply text-xl;
+  }
+
+  .card {
+    @apply p-3;
+  }
+}
