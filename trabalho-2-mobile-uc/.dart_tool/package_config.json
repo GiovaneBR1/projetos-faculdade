@@ -1,0 +1,16 @@
+{
+  "configVersion": 2,
+  "packages": [
+    {
+      "name": "trabalho2",
+      "rootUri": "../",
+      "packageUri": "lib/",
+      "languageVersion": "3.11"
+    }
+  ],
+  "generator": "pub",
+  "generatorVersion": "3.11.1",
+  "flutterRoot": "file:///C:/Mobile/flutter",
+  "flutterVersion": "3.41.4",
+  "pubCache": "file:///C:/Users/alexa/AppData/Local/Pub/Cache"
+}
