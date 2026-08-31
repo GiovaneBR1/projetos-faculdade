@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/21.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CadastroController">
+    <children>
+        <VBox alignment="TOP_CENTER" spacing="12.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+            <Label text="Cadastro de Usuário">
+            <font>
+               <Font name="Arial Black" size="18.0" />
+            </font></Label>
+
+            <GridPane hgap="10.0" prefHeight="129.0" prefWidth="464.0" vgap="10.0">
+                <columnConstraints>
+                    <ColumnConstraints maxWidth="286.0" minWidth="34.0" prefWidth="137.0" />
+                    <ColumnConstraints maxWidth="485.0" minWidth="229.0" prefWidth="378.0" />
+                </columnConstraints>
+
+                <Label text="Nome:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                <TextField fx:id="campoNome" promptText="Nome completo" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+                <Label text="Email:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                <TextField fx:id="campoEmail" promptText="seu@exemplo.com" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+                <Label text="Senha:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                <PasswordField fx:id="campoSenha" promptText="Mínimo 6 caracteres" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+                <Label text="Data de nascimento:" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+                <DatePicker fx:id="campoDataNasc" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <rowConstraints>
+               <RowConstraints />
+               <RowConstraints />
+               <RowConstraints />
+               <RowConstraints />
+            </rowConstraints>
+            <VBox.margin>
+               <Insets left="100.0" right="100.0" />
+            </VBox.margin>
+            </GridPane>
+
+            <Label fx:id="labelMensagem" textFill="red" wrapText="true" />
+
+            <HBox alignment="CENTER" spacing="12.0">
+                <Button onAction="#acaoCadastrar" text="Cadastrar" />
+                <Button onAction="#acaoCancelar" text="Cancelar" />
+            </HBox>
+
+            <Region prefHeight="10.0" />
+            <Label style="-fx-font-size:11px; -fx-text-fill:#555;" text="Campos obrigatórios: Nome, Email e Senha." />
+         <padding>
+            <Insets top="50.0" />
+         </padding>
+        </VBox>
+    </children>
+</AnchorPane>
