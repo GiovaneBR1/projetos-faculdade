@@ -1,0 +1,5 @@
+name: trabalho2
+dependencies:
+
+environment:
+  sdk: '^3.11.0'

@@ -1,0 +1,6 @@
+name: biblioteca
+description: Sistema de gerenciamento de biblioteca em Dart.
+version: 1.0.0
+
+environment:
+  sdk: ^3.2.0
